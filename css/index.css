@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+body {
+margin: 0;
+padding: 0;
+font-family: "Open Sans";
+background-color: white;
+}
+
+h1 {   
+font-size: 14px; 
+color: #fffade;
+font-weight: 400;
+}
+
+h2 {
+color: #888;
+font-size: 2em;
+}
+  
+h3 {
+margin-top: 5rem;
+color:#555555;
+letter-spacing: 1rem;
+font-size: 3em;
+font-weight: 300;
+width:100%;
+}
+
+.header {     
+pointer-events: none;
+display: block;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100vh;
+text-align: center;
+background-color: #DCE9CB;
+
+}
+
+section {
+display: block;
+height: 100%;
+width: 100%;
+}
+
+
+p {
+color: black;
+padding: 1rem;
+}
+
+ul {
+list-style: none;
+display: flex;
+}
+
+li {
+float: center;
+}
+
+li a {
+display: block;
+text-decoration: none;
+font-family: 'Open Sans';
+font-size: 1.1rem;
+letter-spacing: 0.1rem;
+color: #555555;
+text-align: center;
+padding: 14px 30px;
+transition: background .25s, box-shadow .15s;
+}
+   
+li a:hover {
+color: black;
+font-weight: bold;
+}
+
+
+
+.topnav {
+background-color: white;
+display: flex;
+position: fixed;
+justify-content: center;
+top: 0;
+width: 100%;
+height: 5rem;
+z-index: 100;
+}
+
+.navigation {
+position: fixed;
+display: flex;
+justify-content: center;
+overflow: hidden;
+top: 0;
+width: 100%;
+height: 5rem;
+z-index: 100;
+background-color: white;
+box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+transition: height 1s;
+}
+
+
+
+section.happy, section.kiska, section.birthday, section.pretty {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.happy p {
+text-align: center;
+width: 40rem;
+}
+.kiska p{
+text-align: center;
+width: 40rem;
+}
+.birthday p{
+text-align: center;
+width: 40rem; 
+}
+.pretty p{
+text-align: center;
+width: 40rem;    
+}
+
+p.bonus {
+text-align: center;
+font-size: 0.7rem;
+margin: 4rem;
+}
+
+
+.heart {
+display: none;
+margin: 0 auto;
+order: -1;
+padding: 12px 30px;
+}
+   
+.heart-trigger {
+display: block;
+margin: 0 auto;
+order: 0;
+padding: 12px 30px;
+}
+
+.visible {
+display: block;
+transform: scale(1);
+}
+  
+.fa-heart {
+font-size: 2em; 
+color: #555555;
+transition: all .2s ease-in-out;
+}
+    
+.fa-heart:hover {
+color: #DE6E4B;
+transform: scale(1.3);
+}
+
+.sketch {
+position: absolute;
+top: 0;
+z-index: 1;     
+}
+  
+
+.page-container {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+text-align: center;
+width: 100%;
+}
+
+
+.content-section {
+display: block;
+height: 100%;
+width: 800px;
+}
+
+.footer-copyright{
+display: block;
+float: left;
+width: 100%;
+text-align: center;
+}
+
+footer {
+position: relative;
+width: 100%;
+}
+
+p.copyright {
+position: absolute;
+width: 100%;
+color:#555555;
+font-size: 0.7em;
+text-align: center;
+bottom:0;
+}
+
+img.corgi {
+width: 18rem;
+height: 20rem;
+margin: 0 0 2rem 0;
+}
+
+img.ballon1 {
+height: 20rem;
+margin: 0 0 2rem 0;
+}
+
+img.miracle1 {
+margin: 0 2rem 0;
+}
+
+img.miracle2 {
+margin: 0 2rem 0;
+}
+img.cherry {
+height: 4rem;
+margin: 0.8rem 0 2rem 0;
+}
+img.doggo {
+width:25rem;   
+}
+.content-section {
+width: 100%;
+}
+
+
+
+
+/* ---------------------------------------------------- MOBILE */
+@media only screen and (max-width: 850px) {
+
+input, button, #header > div {
+width: 15rem;
+height: 2rem;
+font-size: 1rem;
+}
+
+section {
+width: 100%;
+}
+
+.happy > div {
+justify-content: space-around;
+}
+
+.happy img {
+width: 12rem;
+height: 15rem;
+margin: 2rem 2rem;
+}
+
+
+.happy p {
+width: 90%;
+}
+
+.birthday img {
+width:80%;
+height:80%;
+}
+
+.pretty img {
+width: 90%;
+height: 90%; 
+}
+
+.kiska p {
+width: 90%;   
+}
+
+
+}
+
+/* ---------------------------------------------------- BUTTON :) */
+
+.container {
+    top:50%;
+    left:50%;
+    margin-left: -65px;
+    margin-top: -20px;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+  }
+
+button {
+    outline:none;
+    height: 4rem;
+    text-align: center;
+    width: 15rem;
+    border-radius:40px;
+    background: #fff;
+    border: 2px solid #DCE9CB;
+    color:#DCE9CB;
+    letter-spacing:3px;
+    text-shadow:0;
+    font-size: 1em;
+    font-weight:400;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+button:hover {
+color:white;
+background: #DCE9CB;
+}
+
+button:active {
+letter-spacing: 2px;
+letter-spacing: 2px ;
+}
+
+button:after {
+content:"CLICK HERE :)";
+}
+
+.onclic {
+width: 40px;
+border-color: #bbbbbb;
+border-width: 3px;
+font-size: 0;
+border-left-color: #DCE9CB;
+animation: rotating 2s 0.25s linear infinite;
+}
+
+.onclic:after {
+content:"";
+}
+.onclick:hover {
+color: #DCE9CB;
+background: white;
+}
+
+.validate {
+font-size:13px;
+color: white;
+background: #DCE9CB;
+}
+
+.validate:after {
+font-family:'Open Sans';
+content:"\f00c";
+}
+  
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
