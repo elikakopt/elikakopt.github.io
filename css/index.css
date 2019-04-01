@@ -107,7 +107,9 @@ box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
 transition: height 1s;
 }
 
-
+.navigation a.icon {
+display: none;
+}
 
 section.happy, section.kiska, section.birthday, section.pretty, section.puppy {
 display: flex;
@@ -146,8 +148,6 @@ font-size: 0.7rem;
 margin: 4rem;
 }
 
-
-
    
 .heart-trigger {
 display: block;
@@ -162,11 +162,9 @@ transform: scale(1);
 }
   
 .heartt {
-  
-  margin: 0 auto;
-  
-  padding: 12px 30px;
-  }
+margin: 0 auto;
+padding: 12px 30px;
+}
 
 .fa-heart {
 font-size: 2em; 
@@ -253,12 +251,77 @@ width: 100%;
 }
 
 
+/*Gallery */
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+.gallery .item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  margin-right: -14px;
+  box-shadow: 0 1px 4px 0 rgba(10,16,34,0.2);
+  border-radius: 0;
+  will-change: flex, transform, box-shadow;
+  transition: flex 700ms ease, transform 700ms ease, box-shadow 700ms ease, -webkit-transform 700ms ease, border-radius 700ms ease;
+}
+.gallery .item:first-child {
+  border-radius: 5px 0 0 5px;
+  z-index: 5 !important;
+}
+.gallery .item:nth-child(2) {
+  z-index: 4 !important;
+}
+.gallery .item:nth-child(3) {
+  z-index: 3 !important;
+}
+.gallery .item:nth-child(4) {
+  z-index: 2 !important;
+}
+.gallery .item:last-child {
+  border-radius: 0 5px 5px 0;
+  z-index: 1 !important;
+  margin-right: 0 !important;
+}
+.gallery .item:hover {
+  flex: 4;
+  border-radius: 5px;
+  z-index: 999 !important;
+  box-shadow: 0 12px 24px 0 rgba(10,16,34,0.3), 0 0 0 transparent;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.gallery .item-1 {
+  background-image: url("/Users/likakoptyreva/Desktop/attempt2/public/images/IMG_0241.jpg");
+}
+.gallery .item-2 {
+  background-image: url("/Users/likakoptyreva/Desktop/attempt2/public/images/IMG_0238.jpg");
+}
+.gallery .item-3 {
+  background-image: url("/Users/likakoptyreva/Desktop/attempt2/public/images/IMG_0234.jpg");
+}
+.gallery .item-4 {
+  background-image: url("/Users/likakoptyreva/Desktop/attempt2/public/images/IMG_0235.jpg");
+}
+.gallery .item-5 {
+  background-image: url("/Users/likakoptyreva/Desktop/attempt2/public/images/IMG_0237.jpg");
+}
+
+
+
 
 
 /* ---------------------------------------------------- MOBILE */
 
 @media only screen and (max-width: 880px) {
-
 
 
 section {
@@ -267,6 +330,36 @@ width: 100%;
 
 .script {
 display:none;
+}
+
+.navigation.responsive div {
+  position: fixed;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: grey;
+}
+
+.navigation a.icon {
+  float: right;
+  display: block;
+  margin: 0px 1rem;
+}
+
+.navigation.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.navigation.responsive a {
+  display: block;
+  color: grey;
 }
 
 .happy img {
@@ -950,3 +1043,5 @@ content:"\f00c";
      top: -18%;
    }
    
+
+   <!
