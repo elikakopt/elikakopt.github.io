@@ -81,6 +81,19 @@ font-weight: bold;
 }
 
 
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+header>nav>label {
+  display: none;
+  font-size: 200%;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}
 
 .topnav {
 background-color: white;
@@ -323,6 +336,7 @@ width: 100%;
 
 @media only screen and (max-width: 880px) {
 
+  
 
 section {
 width: 100%;
@@ -401,6 +415,12 @@ width: 90%;
 }
 
 
+}
+
+
+@media only screen and (max-width: 640px)
+nav>input {
+    z-index: 4;
 }
 
 /* ---------------------------------------------------- BUTTON :) */
